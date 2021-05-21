@@ -1,0 +1,33 @@
+html {
+  background-color: burlywood;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 50px;
+}
+div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+button {
+  font-size: medium;
+  font-weight: bold;
+}
+
+select {
+  font-weight: bold;
+}
+
+label {
+  font-size: large;
+  margin: 10px;
+}
