@@ -81,6 +81,13 @@ app.get("/", async (req, res, next) => {
                              
                      
                       </section>
+                      <section class = "title" >
+                      <label for="count-select">Count</label>
+                       
+                        <input type = "date" name = 'purchasedAt' value = "2021-05-20"></input>
+                             
+                     
+                      </section>
            
                     <section>
                         <button>Add</button>
@@ -152,6 +159,10 @@ app.get("/", (req, res, next) => {
   res.status(500).send("Sorry, something went wrong!");
 });
 
+app.use((er, req, res, next) => {
+  console.error(er);
+  res.status(500).send("Oh no! Something went wrong! :(");
+});
 // open the port at 1337
 app.listen(1337, () => {
   syncAndSeed();
